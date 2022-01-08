@@ -26,10 +26,15 @@ function App() {
     setWishes(arr);
   }
 
+  const Delete = (wish) => {
+    const arr = wishes.filter(item => item.id !== wish.id)
+    setWishes(arr);
+  }
+
   return (
     <>
       <Header></Header>
-      <Wishes wishes={wishes} plus={Plus} minus={Minus}></Wishes>
+      <Wishes wishes={wishes} plus={Plus} minus={Minus} delete={Delete}></Wishes>
       <Add></Add>
     </>
   )

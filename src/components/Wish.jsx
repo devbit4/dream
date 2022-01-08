@@ -11,6 +11,10 @@ const Wish = (props) => {
         props.minus(props.wish)
     }
 
+    const onDelete = () => {
+        props.delete(props.wish)
+    }
+
     return (
         <li className="wish">
             <span className='activity-name'><i className="fas fa-thumbtack"></i> {props.wish.name}</span>
@@ -19,7 +23,7 @@ const Wish = (props) => {
                 <span className='option num'>{props.wish.good}</span>
                 <span className='option'><i className="far fa-thumbs-down" onClick={onMinus}></i></span>
                 <span className='option num'>{props.wish.bad}</span>
-                <span className='option'><i class="far fa-trash-alt"></i></span>
+                <span className='option'><i className="far fa-trash-alt" onClick={onDelete}></i></span>
             </div>
         </li>
     );
