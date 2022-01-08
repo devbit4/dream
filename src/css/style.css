@@ -28,30 +28,13 @@ header {
       font-size: 24px;
       margin-right: 10px; }
 
-.add {
+.quote {
   width: 100%;
-  height: 10vh;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .add input {
-    width: 30%;
-    height: 4vh;
-    border: none;
-    outline: none;
-    padding-left: 1vw;
+  height: 4vh; }
+  .quote marquee {
+    width: 100%;
+    height: 100%;
     font: 14px/1 'Open Sans'; }
-  .add button {
-    width: fit-content;
-    padding: 0 10px;
-    height: 4vh;
-    outline: none;
-    border: none;
-    background: #ddd;
-    color: #000;
-    font: 14px/1 'Open Sans';
-    cursor: pointer; }
 
 .wish {
   width: 100%;
@@ -65,7 +48,7 @@ header {
   .wish:hover {
     border: 3px solid #fff; }
   .wish .activity-name {
-    font: 18px/1 'Open Sans'; }
+    font: 16px/1 'Open Sans'; }
     .wish .activity-name i {
       margin-right: 10px;
       color: #000; }
@@ -94,7 +77,35 @@ header {
 
 .wishes {
   width: 100%;
-  height: 80vh;
+  height: 77vh;
+  margin-bottom: 1vh;
   overflow-y: scroll; }
+
+.add {
+  width: 100%;
+  height: 8vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .add input {
+    width: 30%;
+    height: 4vh;
+    border: none;
+    outline: none;
+    padding-left: 1vw;
+    font: 14px/1 'Open Sans'; }
+  .add button {
+    width: fit-content;
+    padding: 0 10px;
+    height: 4vh;
+    outline: none;
+    border: none;
+    background: #ddd;
+    color: #000;
+    font: 14px/1 'Open Sans';
+    cursor: pointer; }
+  .add span {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

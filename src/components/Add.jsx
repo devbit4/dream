@@ -15,7 +15,7 @@ const Add = (props) => {
 
     return (
         <div className='add'>
-            <input onKeyPress={onKeyPress} ref={input} placeholder="Write your wish" type="text" />
+            <input onKeyPress={onKeyPress} ref={input} placeholder="Write your wish (activity/year)" type="text" />
             <button onClick={onAdd}>ENTER</button>
         </div>
     )
