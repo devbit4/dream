@@ -28,3 +28,12 @@
         color: #fff;
     }
 }
+
+@media screen and (max-width: 690px) {
+    .add{
+        input{
+            width: 70%;
+        }
+    }
+
+}

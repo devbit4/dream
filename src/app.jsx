@@ -11,7 +11,6 @@ function App() {
     { id: 2, name: 'Visiting Africa / 2050', good: 0, bad: 0 },
     { id: 3, name: 'Buying Mac Book / 2030 ', good: 0, bad: 0 },
   ]);
-  let [total, setTotal] = useState(0);
 
   const Plus = (wish) => {
 

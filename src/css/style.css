@@ -72,7 +72,7 @@ body {
   .wish .option {
     margin-right: 1vw; }
     .wish .option i {
-      font-size: 20px;
+      font-size: 18px;
       cursor: pointer; }
   .wish .num {
     background: #f1c276;
@@ -85,6 +85,18 @@ body {
     line-height: 25px;
     color: #fff; }
 
+@media screen and (max-width: 500px) {
+  .wish {
+    padding: 5vw; }
+    .wish .activity-name {
+      font: 12px/1 'Open Sans'; }
+    .wish .option i {
+      font-size: 12px; }
+    .wish .num {
+      font: 12px/1 'Open Sans';
+      width: 15px;
+      height: 15px;
+      line-height: 15px; } }
 .wishes {
   width: 100%;
   height: 77vh;
@@ -117,5 +129,9 @@ body {
     cursor: pointer; }
   .add span {
     color: #fff; }
+
+@media screen and (max-width: 690px) {
+  .add input {
+    width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
