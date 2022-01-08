@@ -7,6 +7,9 @@
     justify-content: space-between;
     padding:0 10vw;
     border-bottom: 1px solid #ddd;
+    &:hover{
+        border: 3px solid #fff;
+    }
     .activity-name{
         i{
             margin-right: 10px;

@@ -31,7 +31,25 @@ header {
 .add {
   width: 100%;
   height: 10vh;
-  background: #000; }
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .add input {
+    width: 30%;
+    height: 4vh;
+    border: none;
+    outline: none;
+    padding-left: 1vw;
+    font: 14px/1 'Open Sans'; }
+  .add button {
+    width: 10%;
+    height: 4vh;
+    outline: none;
+    border: none;
+    background: #ddd;
+    color: #000;
+    font: 14px/1 'Open Sans'; }
 
 .wish {
   width: 100%;
@@ -42,6 +60,8 @@ header {
   justify-content: space-between;
   padding: 0 10vw;
   border-bottom: 1px solid #ddd; }
+  .wish:hover {
+    border: 3px solid #fff; }
   .wish .activity-name {
     font: 18px/1 'Open Sans'; }
     .wish .activity-name i {
