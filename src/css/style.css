@@ -57,4 +57,9 @@ header {
     line-height: 25px;
     color: #fff; }
 
+.wishes {
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll; }
+
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ const Wishes = (props) => {
     ]);
 
     return (
-        <div className='wishes'>
+        <ul className='wishes'>
             {
                 wishes.map(wish => {
                     return (
@@ -17,7 +17,7 @@ const Wishes = (props) => {
                     )
                 })
             }
-        </div>
+        </ul>
     )
 };
 
