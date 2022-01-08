@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Wish = (props) => {
-
+    const name = useRef();
 
     const onPlus = () => {
         props.plus(props.wish);
@@ -15,9 +15,13 @@ const Wish = (props) => {
         props.delete(props.wish)
     }
 
+    const doneLine = () => {
+        name.current.classList.toggle("done");
+    }
+
     return (
         <li className="wish">
-            <span className='activity-name'><i className="fas fa-thumbtack"></i> {props.wish.name}</span>
+            <span className='activity-name' onClick={doneLine} ref={name}><i className="fas fa-check"></i> {props.wish.name}</span>
             <div className='options'>
                 <span className="option"><i className="far fa-thumbs-up" onClick={onPlus}></i></span>
                 <span className='option num'>{props.wish.good}</span>

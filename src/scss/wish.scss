@@ -13,8 +13,18 @@
     .activity-name{
         i{
             margin-right: 10px;
+            color: #000;
         }
         font: 18px/1 'Open Sans';
+        &.done{
+            text-decoration: line-through;
+            text-decoration-thickness: 3px;
+            text-decoration-color: rgba(241,194,118,1);
+            color: #ddd;
+            i{
+                color: #ddd;
+            }
+        }
     }
     .option{
         margin-right: 1vw;

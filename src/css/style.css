@@ -67,7 +67,15 @@ header {
   .wish .activity-name {
     font: 18px/1 'Open Sans'; }
     .wish .activity-name i {
-      margin-right: 10px; }
+      margin-right: 10px;
+      color: #000; }
+    .wish .activity-name.done {
+      text-decoration: line-through;
+      text-decoration-thickness: 3px;
+      text-decoration-color: #f1c276;
+      color: #ddd; }
+      .wish .activity-name.done i {
+        color: #ddd; }
   .wish .option {
     margin-right: 1vw; }
     .wish .option i {
