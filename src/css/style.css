@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Sansita:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+body {
+  background: linear-gradient(0deg, #f1c276 0%, #f287c2 100%) fixed; }
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header h1 {
+    font: 700 32px/1 'Sansita'; }
+    header h1 i {
+      font-size: 24px;
+      margin-right: 10px; }
+
+.wish {
+  width: 100%;
+  height: 10vh;
+  background: rgba(221, 221, 221, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  border-bottom: 1px solid #ddd; }
+  .wish .activity-name {
+    font: 18px/1 'Open Sans'; }
+    .wish .activity-name i {
+      margin-right: 10px; }
+  .wish .option {
+    margin-right: 1vw; }
+    .wish .option i {
+      font-size: 20px;
+      cursor: pointer; }
+  .wish .num {
+    background: #f1c276;
+    border-radius: 50%;
+    text-align: center;
+    font: 18px/1 'Open Sans';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

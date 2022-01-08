@@ -1,7 +1,14 @@
-import './app.css';
+import Header from './components/Header';
+import Wishes from './components/Wishes';
+import './css/style.css';
 
 function App() {
-  return <h1>Hello:)</h1>
+  return (
+    <>
+      <Header></Header>
+      <Wishes></Wishes>
+    </>
+  )
 
 
 }
