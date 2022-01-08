@@ -43,13 +43,15 @@ header {
     padding-left: 1vw;
     font: 14px/1 'Open Sans'; }
   .add button {
-    width: 10%;
+    width: fit-content;
+    padding: 0 10px;
     height: 4vh;
     outline: none;
     border: none;
     background: #ddd;
     color: #000;
-    font: 14px/1 'Open Sans'; }
+    font: 14px/1 'Open Sans';
+    cursor: pointer; }
 
 .wish {
   width: 100%;

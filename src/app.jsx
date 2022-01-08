@@ -30,12 +30,17 @@ function App() {
     const arr = wishes.filter(item => item.id !== wish.id)
     setWishes(arr);
   }
+  const Adding = (name) => {
+    const arr = [...wishes, { id: Math.random(), name: name, good: 0, bad: 0 }]
+    setWishes(arr);
+  }
+
 
   return (
     <>
       <Header></Header>
       <Wishes wishes={wishes} plus={Plus} minus={Minus} delete={Delete}></Wishes>
-      <Add></Add>
+      <Add adding={Adding}></Add>
     </>
   )
 
