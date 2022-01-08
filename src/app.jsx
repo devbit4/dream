@@ -6,11 +6,12 @@ import Wishes from './components/Wishes';
 import './css/style.css';
 
 function App() {
-  const [wishes, setWishes] = useState([
+  let [wishes, setWishes] = useState([
     { id: 1, name: 'Reading 100 Books / 2022', good: 0, bad: 0 },
     { id: 2, name: 'Visiting Africa / 2050', good: 0, bad: 0 },
     { id: 3, name: 'Buying Mac Book / 2030 ', good: 0, bad: 0 },
   ]);
+  let [total, setTotal] = useState(0);
 
   const Plus = (wish) => {
 
@@ -37,9 +38,10 @@ function App() {
   }
 
 
+
   return (
     <>
-      <Header></Header>
+      <Header total={wishes.length}></Header>
       <Wishes wishes={wishes} plus={Plus} minus={Minus} delete={Delete}></Wishes>
       <Quote></Quote>
       <Add adding={Adding}></Add>

@@ -4,7 +4,13 @@ import React from 'react';
 const Header = (props) => {
 
     return (
-        <header><h1><i className="fas fa-rocket"></i> bucketList</h1></header >
+        <div className='header'>
+            <header>
+                <i className="fas fa-rocket"></i>
+                <h1> bucketList</h1>
+                <span>{props.total}</span>
+            </header>
+        </div>
     )
 };
 
