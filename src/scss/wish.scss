@@ -16,6 +16,7 @@
             color: #000;
         }
         font: 16px/1 'Open Sans';
+        cursor: pointer;
         &.done{
             text-decoration: line-through;
             text-decoration-thickness: 3px;
