@@ -119,13 +119,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .add select {
+    width: 10%;
+    height: 4vh;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-right: 1px solid #000; }
   .add input {
-    width: 30%;
+    width: 20%;
     height: 4vh;
     border: none;
     outline: none;
     padding-left: 1vw;
-    font: 14px/1 'Open Sans'; }
+    font: 14px/1 'Open Sans';
+    border-right: 1px solid #000; }
   .add button {
     width: fit-content;
     padding: 0 10px;
@@ -140,7 +148,9 @@ body {
     color: #fff; }
 
 @media screen and (max-width: 690px) {
+  .add select {
+    width: 20%; }
   .add input {
-    width: 70%; } }
+    width: 35%; } }
 
 /*# sourceMappingURL=style.css.map */

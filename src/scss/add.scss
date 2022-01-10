@@ -5,13 +5,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    select{
+        width: 10%;
+        height: 4vh;
+        border: none;
+        outline: none;
+        text-align: center;
+        border-right: 1px solid #000;
+    }
     input{
-        width: 30%;
+        width: 20%;
         height: 4vh;
         border: none;
         outline: none;
         padding-left: 1vw;
         font: 14px/1 'Open Sans';
+        border-right: 1px solid #000;
     }
     button{
         width: fit-content;
@@ -31,8 +40,11 @@
 
 @media screen and (max-width: 690px) {
     .add{
+        select{
+            width: 20%;
+        }
         input{
-            width: 70%;
+            width: 35%;
         }
     }
 

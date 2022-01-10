@@ -10,9 +10,15 @@ const Add = (props) => {
         }
     }
     const onAdd = () => {
-        if (wish.current.value === "") return;
+        if (wish.current.value === "") {
+            alert("버킷리스트 활동명을 입력하세요");
+            return;
+        };
         if (deadLine.current.value === "") {
             deadLine.current.value = "미정";
+        }
+        if (type.current.value === "") {
+            type.current.value = "기타";
         }
         props.adding(type.current.value, wish.current.value, deadLine.current.value);
         wish.current.value = "";
@@ -23,15 +29,16 @@ const Add = (props) => {
 
     return (
         <div className='add'>
-            <select name="type" id="type" ref={type}>
+            <select className="type" name="type" id="type" ref={type}>
                 <option value="">-분류-</option>
                 <option value="성취">성취</option>
                 <option value="관계">관계</option>
                 <option value="건강">건강</option>
                 <option value="여행">여행</option>
+                <option value="기타">기타</option>
             </select>
-            <input onKeyPress={onKeyPress} ref={wish} placeholder="Write your wish" type="text" />
-            <input onKeyPress={onKeyPress} ref={deadLine} placeholder="DeadLine" type="text" />
+            <input className="wishlist" onKeyPress={onKeyPress} ref={wish} placeholder="Write your wish" type="text" />
+            <input className="deadline" onKeyPress={onKeyPress} ref={deadLine} placeholder="DeadLine" type="text" />
             <button onClick={onAdd}>ENTER</button>
         </div>
     )
