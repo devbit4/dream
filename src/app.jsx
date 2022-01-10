@@ -4,12 +4,34 @@ import Header from './components/Header';
 import Quote from './components/Quote';
 import Wishes from './components/Wishes';
 import './css/style.css';
+import Particles from 'react-tsparticles';
 
 function App() {
   let [wishes, setWishes] = useState([
-    { id: 1, type: "가족", name: 'Reading 100 Books', deadLine: 2010, good: 0, bad: 0 },
-    { id: 2, type: "건강", name: 'Visiting Africa', deadLine: 2010, good: 0, bad: 0 },
-    { id: 3, type: "성취", name: 'Buying Mac Book', deadLine: 2010, good: 0, bad: 0 },
+    {
+      id: 1,
+      type: '가족',
+      name: 'Reading 100 Books',
+      deadLine: 2010,
+      good: 0,
+      bad: 0,
+    },
+    {
+      id: 2,
+      type: '건강',
+      name: 'Visiting Africa',
+      deadLine: 2010,
+      good: 0,
+      bad: 0,
+    },
+    {
+      id: 3,
+      type: '성취',
+      name: 'Buying Mac Book',
+      deadLine: 2010,
+      good: 0,
+      bad: 0,
+    },
   ]);
 
   const Plus = (wish) => {
@@ -31,12 +53,82 @@ function App() {
     setWishes(arr);
   };
   const Adding = (type, wish, deadLine) => {
-    const arr = [...wishes, { id: Math.random(), type: type, name: wish, deadLine: deadLine, good: 0, bad: 0 }];
+    const arr = [
+      ...wishes,
+      {
+        id: Math.random(),
+        type: type,
+        name: wish,
+        deadLine: deadLine,
+        good: 0,
+        bad: 0,
+      },
+    ];
     setWishes(arr);
   };
 
   return (
     <>
+      <Particles
+        params={{
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: 'push',
+              },
+              onHover: {
+                enable: true,
+                mode: 'repulse',
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: '#fff',
+              animation: {
+                h: {
+                  enable: true,
+                  speed: 20,
+                },
+              },
+            },
+            links: {
+              color: {
+                value: '#ffffff',
+              },
+              enable: true,
+              opacity: 0.4,
+            },
+            move: {
+              enable: true,
+              outModes: {
+                bottom: 'out',
+                left: 'out',
+                right: 'out',
+                top: 'out',
+              },
+              speed: 1,
+            },
+            number: {
+              density: {
+                enable: true,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            size: {
+              value: {
+                min: 0.1,
+                max: 3,
+              },
+            },
+          },
+        }}
+      />
+
       <Header total={wishes.length}></Header>
       <Wishes
         wishes={wishes}
