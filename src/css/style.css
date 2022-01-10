@@ -43,7 +43,8 @@ body {
     position: absolute;
     top: 50%;
     right: 10%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    font: 14px/1 'Open Sans'; }
 
 .quote {
   width: 100%;
@@ -64,18 +65,18 @@ body {
   border-bottom: 1px solid #ddd; }
   .wish:hover {
     border: 3px solid #fff; }
-  .wish .activity-name {
+  .wish .description {
     font: 16px/1 'Open Sans';
     cursor: pointer; }
-    .wish .activity-name i {
+    .wish .description i {
       margin-right: 10px;
       color: #000; }
-    .wish .activity-name.done {
+    .wish .description.done span {
       text-decoration: line-through;
       text-decoration-thickness: 3px;
       text-decoration-color: #f1c276;
       color: #ddd; }
-      .wish .activity-name.done i {
+      .wish .description.done span i {
         color: #ddd; }
   .wish .option {
     margin-right: 1vw; }
