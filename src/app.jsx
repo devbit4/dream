@@ -7,9 +7,9 @@ import './css/style.css';
 
 function App() {
   let [wishes, setWishes] = useState([
-    { id: 1, name: 'Reading 100 Books', deadLine: 2010, good: 0, bad: 0 },
-    { id: 2, name: 'Visiting Africa', deadLine: 2010, good: 0, bad: 0 },
-    { id: 3, name: 'Buying Mac Book', deadLine: 2010, good: 0, bad: 0 },
+    { id: 1, type: "가족", name: 'Reading 100 Books', deadLine: 2010, good: 0, bad: 0 },
+    { id: 2, type: "건강", name: 'Visiting Africa', deadLine: 2010, good: 0, bad: 0 },
+    { id: 3, type: "성취", name: 'Buying Mac Book', deadLine: 2010, good: 0, bad: 0 },
   ]);
 
   const Plus = (wish) => {
@@ -30,8 +30,8 @@ function App() {
     const arr = wishes.filter((item) => item.id !== wish.id);
     setWishes(arr);
   };
-  const Adding = (wish, deadLine) => {
-    const arr = [...wishes, { id: Math.random(), name: wish, deadLine: deadLine, good: 0, bad: 0 }];
+  const Adding = (type, wish, deadLine) => {
+    const arr = [...wishes, { id: Math.random(), type: type, name: wish, deadLine: deadLine, good: 0, bad: 0 }];
     setWishes(arr);
   };
 

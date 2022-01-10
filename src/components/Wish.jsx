@@ -22,7 +22,9 @@ const Wish = (props) => {
     return (
         <li className="wish">
             <div className="description" onClick={doneLine} ref={desc} >
-                <span className='activity-name'><i className="fas fa-check"></i>{props.wish.name} </span>
+                <i className="fas fa-check"></i>
+                <span className='activity-type'> {props.wish.type} / </span>
+                <span className='activity-name'>{props.wish.name} </span>
                 <span className='activity-deadline'>/ {props.wish.deadLine}</span>
             </div>
 

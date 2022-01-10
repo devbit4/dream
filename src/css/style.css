@@ -76,8 +76,8 @@ body {
       text-decoration-thickness: 3px;
       text-decoration-color: #f1c276;
       color: #ddd; }
-      .wish .description.done span i {
-        color: #ddd; }
+    .wish .description.done i {
+      color: #ddd; }
   .wish .option {
     margin-right: 1vw; }
     .wish .option i {
