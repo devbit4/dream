@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Add from './components/Add';
 import Header from './components/Header';
 import Quote from './components/Quote';
@@ -7,6 +7,7 @@ import './css/style.css';
 import Particles from 'react-tsparticles';
 
 function App() {
+  let set = useRef();
   let [wishes, setWishes] = useState([
     {
       id: 1,
@@ -129,15 +130,18 @@ function App() {
         }}
       />
 
-      <Header total={wishes.length}></Header>
-      <Wishes
-        wishes={wishes}
-        plus={Plus}
-        minus={Minus}
-        delete={Delete}
-      ></Wishes>
-      <Quote></Quote>
-      <Add adding={Adding}></Add>
+      <Header total={wishes.length} set={set}></Header>
+      <div className='set' ref={set}>
+        <Wishes
+          wishes={wishes}
+          plus={Plus}
+          minus={Minus}
+          delete={Delete}
+        ></Wishes>
+        <Quote></Quote>
+        <Add adding={Adding}></Add>
+        <input type="date" />
+      </div>
     </>
   );
 }
