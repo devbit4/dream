@@ -26,6 +26,7 @@ const Header = (props) => {
             </div>
             <div className='time'>
                 <Moment format='YYYY/MM/DD HH:mm:ss'>{seconds}</Moment>
+                <input type="date" className="date" />
 
             </div>
         </div>

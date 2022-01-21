@@ -44,7 +44,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    width: 100px;
+    width: 90px;
     height: 40px;
     display: flex;
     justify-content: space-between; }
@@ -67,8 +67,19 @@ body {
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
-    font: 14px/1 'Open Sans'; }
+    font: 14px/1 'Open Sans';
+    display: flex;
+    flex-direction: column; }
+    .header .time .date {
+      border: none;
+      cursor: pointer; }
 
+@media screen and (max-width: 610px) {
+  .header .color {
+    left: 2%;
+    width: 80px; }
+  .header .time {
+    display: none; } }
 .quote {
   width: 100%;
   height: 4vh; }
@@ -98,9 +109,9 @@ body {
       text-decoration: line-through;
       text-decoration-thickness: 2px;
       text-decoration-color: #f04511;
-      color: #ddd; }
+      color: #333; }
     .wish .description.done i {
-      color: #ddd; }
+      color: red; }
   .wish .option {
     margin-right: 1vw; }
     .wish .option i {

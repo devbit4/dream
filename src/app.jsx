@@ -140,7 +140,6 @@ function App() {
         ></Wishes>
         <Quote></Quote>
         <Add adding={Adding}></Add>
-        <input type="date" />
       </div>
     </>
   );
