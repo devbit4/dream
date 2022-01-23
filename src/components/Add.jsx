@@ -30,12 +30,12 @@ const Add = (props) => {
     return (
         <div className='add'>
             <select className="type" name="type" id="type" ref={type}>
-                <option value="">-분류-</option>
-                <option value="성취">성취</option>
-                <option value="관계">관계</option>
-                <option value="건강">건강</option>
-                <option value="여행">여행</option>
-                <option value="기타">기타</option>
+                <option value="">type</option>
+                <option value="성취">achievement</option>
+                <option value="관계">relationship</option>
+                <option value="건강">health</option>
+                <option value="여행">travel</option>
+                <option value="기타">etc</option>
             </select>
             <input className="wishlist" onKeyPress={onKeyPress} ref={wish} placeholder="Write your wish" type="text" />
             <input className="deadline" onKeyPress={onKeyPress} ref={deadLine} placeholder="DeadLine" type="text" />

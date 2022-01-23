@@ -11,7 +11,7 @@ function App() {
   let [wishes, setWishes] = useState([
     {
       id: 1,
-      type: '가족',
+      type: 'achievement',
       name: 'Reading 100 Books',
       deadLine: 2010,
       good: 0,
@@ -19,7 +19,7 @@ function App() {
     },
     {
       id: 2,
-      type: '건강',
+      type: 'travel',
       name: 'Visiting Africa',
       deadLine: 2010,
       good: 0,
@@ -27,7 +27,7 @@ function App() {
     },
     {
       id: 3,
-      type: '성취',
+      type: 'achievement',
       name: 'Buying Mac Book',
       deadLine: 2010,
       good: 0,
