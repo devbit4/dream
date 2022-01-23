@@ -1,4 +1,4 @@
-# 🚀 Project Name: Bucketlist
+# 🚀 Project Title: Bucketlist
 
 + 제작이유 
   - 평소 종이 버킷리스트 사용 중 불편함을 느낌
