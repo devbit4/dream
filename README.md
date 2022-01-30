@@ -23,11 +23,11 @@
   
 + 기능 
   - function 1) user 선택에 따른 색깔 변경 가능(2가지) 
-  - function 2) 시계기능 
-  - function 3) 달력기능
-  - function 4) quote 기능
+  - function 2) 시계기능 watch
+  - function 3) 달력기능 calendar
+  - function 4) quote 기능 
   - function 5) bucketlist wish 추가 및 삭제 기능
-  - function 6) 평가 기능
+  - function 6) 평가 기능 reflection
   
 + 어려웠던 점
   - 사용자 경험을 위한 ts particles 모듈 적용 과정에서 헤맴
@@ -39,8 +39,8 @@
 + 추가 및 수정하고 싶은 사항 
   - wish 부분 수정기능 추가
   - 사용자 정의 color 적용
-  - 중요도 추가 
-  - 광고기능 비즈니스 활용가능성 
-  - 여러 페이지로 분리 및 추가 기능 고려
-  - 로그인 기능 추가 및 다른 유저와의 공유 방안 고려
+  - 중요도 추가 priority
+  - 광고기능 비즈니스 활용가능성 put some ads or make business value
+  - 여러 페이지로 분리 및 추가 기능 고려 make more function and pages
+  - 로그인 기능 추가 및 다른 유저와의 공유 방안 고려 add join or login function and make space that users can chat
   - 백엔드 추가
