@@ -1,4 +1,4 @@
-# 🚀 Bucketlist
+# 🚀 프로젝트 제목: Bucketlist
 ![etc](https://user-images.githubusercontent.com/88700967/152277623-530e533c-5ee9-4de9-9f56-da31b02ee423.png)
 
 
