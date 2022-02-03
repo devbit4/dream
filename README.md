@@ -1,4 +1,5 @@
 # 🚀 Project title: Bucketlist
+![etc](https://user-images.githubusercontent.com/88700967/152277623-530e533c-5ee9-4de9-9f56-da31b02ee423.png)
 
 + 제작이유 
   - 평소 종이 버킷리스트 사용 중 불편함을 느낌
