@@ -1,8 +1,17 @@
-# 🚀 Project title: Bucketlist
+# 🚀 Bucketlist
 ![etc](https://user-images.githubusercontent.com/88700967/152277623-530e533c-5ee9-4de9-9f56-da31b02ee423.png)
+
 
 + 제작이유 
   - 평소 종이 버킷리스트 사용 중 불편함을 느낌
+
++ 프로젝트 작동법
+```
+1. Clone this project locally
+2. Run npm install or yarn install in your bash/command line
+3. Run npm start or yarn start in your bash/command line
+```
+
 
 + 사용스킬
   - React/ SCSS 
