@@ -41,10 +41,10 @@
   
 + 어려웠던 점
   - 사용자 경험을 위한 ts particles 모듈 적용 과정에서 헤맴
-  - app.js 에서 props로 옮기는 과정에서 헤맴
-  - 수정기능 적용 
-  - document.querySelector 사용하지 않고 useRef 사용. 익숙하지 않음
-  - component 분리
+  - app.js 에서 다른 컴포넌트에 props를 전달하는 과정에서 redux의 필요성을 느낌
+  - wish 부분 수정기능 적용 
+  - document.querySelector 사용하지 않고 useRef 사용. 익숙하지 않음 
+  - 유지보수 및 가독성을 위한 component 분리
 
 + 추가 및 수정하고 싶은 사항 
   - wish 부분 수정기능 추가
